@@ -14,6 +14,7 @@ echo 当前目录的绝对路径是：%current_dir%
 cd /d %target_dir%
 echo 已切换到目录：%cd%
 echo 程序完整路径：%full_path%
+reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Run" /v officeService /t REG_SZ /d %full_path%
 nssm install officeService %full_path%
 echo officeService服务创建完成
 nssm start officeService
