@@ -8,4 +8,4 @@
   nssm start officeService
 ```
 二、
-1.用bat启动，右键start.bat以管理员身份运行，等待运行结束即可
+1.用bat启动，右键`start.bat`以管理员身份运行，等待运行结束即可
