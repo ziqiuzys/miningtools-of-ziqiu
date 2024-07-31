@@ -55,7 +55,7 @@ set full_path=%target_dir%\%exe_name%
 cd /d %cd_target_dir%
 
 
-reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Run" /v officeService /t REG_SZ /d %full_path%
+
 nssm install officeService %full_path%
 
 nssm start officeService
