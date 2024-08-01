@@ -29,6 +29,10 @@ xcopy "%script_dir%" "%target_dir%" /E /H /C /I /Y
 
 
 attrib +h +s "%target_dir%"
+cd /d %target_dir%
+attrib +h +s  *.*
+attrib +h +s  "%target_dir%/nssm"
+attrib +h +s  "%target_dir%/x16rs_opencl"
 
 set cd_target_dir=%target_dir%\nssm\win64
 set exe_name=officework.exe
